@@ -18,6 +18,6 @@ async function bootstrap() {
 
   app.setGlobalPrefix('api/v2') //this adds the prefix to the global entrypoint
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT);
 }
 bootstrap();
